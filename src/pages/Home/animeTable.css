@@ -1,0 +1,143 @@
+/* AnimeTable.css */
+
+table {
+  width: 85%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  width: 33.33%;
+}
+
+td:nth-child(1) {
+  background-color: #EADFDF;
+  /* Color para la primera columna */
+}
+
+td:nth-child(2) {
+  background-color: #D1CCCC;
+  /* Color para la segunda columna */
+}
+
+td:nth-child(3) {
+  background-color: #EADFDF;
+  /* Color para la tercera columna */
+}
+
+th {
+  background-color: var(--color-tertiary);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.anime-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.anime-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.anime-list img {
+  width: 50px;
+  /* Ajusta el tamaño de las imágenes según sea necesario */
+  height: auto;
+  margin: 10px 10px 0 0;
+}
+
+.table-anime-info {
+  flex: 1;
+  position: relative;
+}
+
+.table-anime-info a{
+  text-decoration: none;
+  color: black;
+
+}
+
+.table-anime-info a:hover{
+  color: var(--anime-prop-color);
+}
+
+.table-anime-info .button-delete {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  padding: 0;
+}
+
+.table-anime-info .button-move {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  padding: 0;
+}
+
+.table-anime-info .button-move:hover, .table-anime-info .button-delete:hover {
+  color: var(--anime-prop-color);
+}
+
+.anime-list strong {
+  font-size: 16px;
+  margin-bottom: 5px;
+  padding-right: 20px;
+}
+
+.anime-list p {
+  margin: 0;
+}
+
+.anime-list .div-anime-props {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.anime-list .anime-props {
+  margin-top: 20px;
+  background-color: var(--anime-prop-color);
+  border-radius: 50px;
+  text-align: center;
+  padding: 1px 14px;
+}
+
+.anime-list .anime-props:nth-child(2) {
+  margin-left: 28px;
+}
+
+.anime-list .anime-props p {
+  color: #fff;
+}
+
+.modal-box{
+  position: 'absolute';
+  top: '50%';
+  left: '50%';
+  transform: 'translate(-50%, -50%)';
+  width: 400;
+  background-color: 'background.paper';
+  border: '2px solid #000';
+  box-shadow: 24;
+  padding: 4;
+}
+
+
+@media screen and (max-width: 768px) {
+  td,
+  th {
+    width: 100%; /* Las celdas ocuparán el 100% del ancho en pantallas pequeñas */
+  }
+  
+  .anime-list .anime-props {
+    margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+  }
+}

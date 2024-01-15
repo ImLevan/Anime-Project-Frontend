@@ -1,0 +1,155 @@
+.register-root{
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+}
+
+.error-message{
+    color: red;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.inputs-register:focus{
+    border-bottom: 4px solid #0726d6
+}
+
+.inputs-register:invalid[focused="true"] ~ span{
+    display: block;
+}
+
+.spans {
+    color: red;
+    font-size: 12px;
+    font-weight: 700;
+    display: none;
+}
+
+.register-container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 5em auto;
+    width: 35%;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.register-container_form-h2 {
+    color: var(--color-secondary);
+    font-size: 30px;
+}
+
+.login-container__form-a {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: #5B146F;
+    padding-top: 20px;
+}
+
+.login-container__form-a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 5em auto;
+    width: 35%;
+    text-align: center;
+}
+
+.form-register{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    width: 100%;
+    text-align: center;
+    height: 450px;
+}
+
+.register-inputs-container{
+    background-color: #1d1c1c;
+    height: 405px;
+}
+
+.input-contain{
+    padding: 45px 0 0 0;
+}
+
+.input-contain input{
+    width: 80%;
+    height: 25px;
+    
+}
+
+.input-contain input:focus{
+    border-bottom: 3px solid var(--color-secondary);
+    outline: none;
+}
+
+.text{
+    color: #fff;
+    width: fit-content;
+    margin-left: 9%;
+}
+
+.div-buttons{
+    display: block;
+    margin-top: 25px;
+}
+
+.div-buttons input{
+    width: 150px;
+    border: none;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 0.31em;
+    cursor: pointer;
+    background: var(--color-secondary);
+    height: 50px;
+    transition: all .3s ease;
+    margin: auto;
+}
+
+.div-buttons input:hover{
+    background-color: var(--color-primary);
+}
+
+.div-link-login{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-link-login p{
+    color: #fff;
+    margin: 0;
+}
+
+.register-container__form-a{
+    text-decoration: none;
+    margin-left: 8px;
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+.register-container__form-a:hover{
+    color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+    input {
+        width: 25em;
+    }
+}
+
+@media only screen and (max-width: 856px) {
+    .input {
+        width: 20em;
+    }
+}

@@ -9,8 +9,6 @@ const Footer = () => {
         { name: 'Precios', path: `/pricing` },
     ];
 
-    const currentYear = new Date().getFullYear();
-    const copyrightText = `© Copyright Anime Tracker ${currentYear}. Todos los derechos reservados`
 
     return (
         <footer className="section-p1">
@@ -29,7 +27,6 @@ const Footer = () => {
             </div>
 
             <div className="copyright">
-                <p>{copyrightText}</p>
                 <p>Creado por <Link to="https://imlevan.github.io/" target="_blank" rel="noopener noreferrer">VC</Link></p>
             </div>
         </footer>

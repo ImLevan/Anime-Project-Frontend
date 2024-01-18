@@ -1,6 +1,6 @@
 import axios from "axios";
 export const client = axios.create({
-  baseURL: "anime-project-backend-production.up.railway.app/api/v1",
+  baseURL: "https://anime-project-backend-production.up.railway.app/api/v1",
   //baseURL: "http://localhost:8080/api/v1",
 });
 

@@ -82,7 +82,7 @@
     height: 40vh;
 }
 
-.options-container{
+.options-container {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -114,21 +114,21 @@
     background-color: #23252b;
 }
 
-#navbar .submenu .option-li p{
+#navbar .submenu .option-li p {
     padding: 18px 0 0 15px;
 }
 
-#navbar .submenu .welcome-p{
+#navbar .submenu .welcome-p {
     color: #fff;
     padding-left: 25px;
 }
 
-#navbar .submenu .div-logout{
+#navbar .submenu .div-logout {
     display: flex;
     width: 100%;
 }
 
-#navbar .submenu .logout-button{
+#navbar .submenu .logout-button {
     display: flex;
     width: 100%;
     background: none;
@@ -138,7 +138,7 @@
     border: 0;
 }
 
-#navbar .submenu .logout-button p{
+#navbar .submenu .logout-button p {
     font-size: 16px;
     margin-top: -2.7px;
     padding: 10px 0 0 10px;
@@ -149,7 +149,7 @@
     background-color: #23252b;
 }
 
-.logo-and-sections{
+.logo-and-sections {
     display: flex;
 }
 
@@ -164,7 +164,7 @@
         right: -300px;
         height: 100vh;
         width: 250px;
-        background-color: var(--color_secundario);
+        background-color: var(--color-primary);
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
         transition: 0.3s;
@@ -200,5 +200,12 @@
 
     #lg-bag {
         display: none;
+    }
+
+    /* Estilos para el submenú */
+    .submenu {
+        position: relative;
+        /* Colocado debajo del ítem principal */
+        right: 30px;
     }
 }

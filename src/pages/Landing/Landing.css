@@ -53,6 +53,9 @@
     width: 285px;
     height: 300px;
     margin: auto;
+    background-color: var(--color-secondary);
+    padding-top: 15px;
+    border-radius: 15px;
 }
 
 #services .services-card img{
@@ -65,7 +68,7 @@
 }
 
 #services .services-card p{
-    color: #aca2a2;
+    color: #e9e3e3;
 }
 
 #info{

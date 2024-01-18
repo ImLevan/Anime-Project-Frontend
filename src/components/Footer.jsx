@@ -3,19 +3,17 @@ import "./Footer.css"
 
 
 const Footer = () => {
-    const categoryItems = [
-        { name: 'Explorar', path: `/explore` },
-        { name: 'Noticias', path: `/news` },
-        { name: 'Precios', path: `/pricing` },
-    ];
+    // const categoryItems = [
+    //     { name: 'Explorar', path: `/explore` },
+    //     { name: 'Noticias', path: `/news` },
+    //     { name: 'Precios', path: `/pricing` },
+    // ];
 
-    const currentYear = new Date().getFullYear();
-    const copyrightText = `© Copyright Anime Tracker ${currentYear}. Todos los derechos reservados`
 
     return (
         <footer className="section-p1">
 
-            <div className="col">
+            {/* <div className="col">
                 <ul id="footer-navbar">
                     <h4>Categorías</h4>
                     {categoryItems.map((item) => (
@@ -26,10 +24,9 @@ const Footer = () => {
                         </li>
                     ))}
                 </ul>
-            </div>
+            </div> */}
 
             <div className="copyright">
-                <p>{copyrightText}</p>
                 <p>Creado por <Link to="https://imlevan.github.io/" target="_blank" rel="noopener noreferrer">VC</Link></p>
             </div>
         </footer>

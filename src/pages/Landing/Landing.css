@@ -1,5 +1,4 @@
 .landing-content{
-    width: 1312px;
     margin: auto;
 }
 
@@ -7,6 +6,7 @@
     width: 1312px;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     position: relative;
     margin: auto;
@@ -44,7 +44,13 @@
 }
 
 #services .services-cards{
-    display: flex;
+    width: 1312px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; 
     margin-top: 100px;
     justify-content: center;
 }
@@ -102,4 +108,102 @@
 
 #info .info-img img{
     width: 100%;
+}
+
+@media(max-width:1330px){
+    #hero {
+        width: 1200px;
+    }
+}
+
+@media(max-width:1249px){
+    #services .services-cards{        
+        justify-content: center;
+        width: 1000px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    #hero {
+        width: 1200px;
+    }
+}
+
+@media(max-width:1217px){
+    #hero {
+        width: 1000px;
+    }
+}
+
+@media(max-width:1149px){
+    #services{
+        width: 700px;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #services .services-cards{  
+        width: 700px;      
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px; 
+    }
+
+    #hero {
+        width: 1000px;
+    }
+}
+
+@media(max-width:1016px){
+    #hero {
+        width: 700px;
+    }
+}
+
+@media(max-width:799px){
+    #services{
+        width: 500px;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #services .services-cards{  
+        width: 500px;      
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 100px; 
+    }
+
+    #hero {
+        width: 500px;
+        height: 330px;
+    }
+}
+
+@media(max-width:511px){
+    #hero {
+        width: 300px;
+        height: 280px;
+    }
+}
+
+@media(max-width:501px){
+    #services{
+        width: 330px;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #services .services-cards{  
+        width: 330px;      
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 100px; 
+    }
 }

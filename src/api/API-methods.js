@@ -1,6 +1,6 @@
 import axios from "axios";
 export const client = axios.create({
-  baseURL: "https://anime-project-backend-production.up.railway.app/api/v1",
+  baseURL: `${import.meta.env.VITE_URL_BACKEND}`
   //baseURL: "http://localhost:8080/api/v1",
 });
 

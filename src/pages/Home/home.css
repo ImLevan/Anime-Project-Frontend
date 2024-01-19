@@ -33,3 +33,27 @@
 .div-home button:hover{
    background-color: var(--color-secondary);
 }
+
+@media(max-width:578px) {
+    .div-home{
+        display: inline-block;
+        margin: auto;
+    }
+    .title-home{
+        text-align: start;
+        margin-left: 40px;
+    }
+    
+}
+
+@media(max-width:487px) {
+    .title-home{
+        text-align: start;
+        margin-left: 10px;
+    }
+    
+    .div-home button{
+        position: relative;
+        margin-bottom: 30px;
+    }
+}

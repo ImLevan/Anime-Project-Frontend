@@ -1,7 +1,6 @@
 import { Suspense } from "react";
-import { Route, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import ProtectedRoute from "./components/ProtectedRoute";
-import RoutesWithNotFound from "./utilities/RoutesWithNotFound";
 import { PrivateRoutes, PublicRoutes } from "./Routes/routes";
 import Login from "./pages/Login/Login";
 import Home from "./pages/Home/Home";
@@ -14,7 +13,7 @@ function App() {
 
   return (
     <Suspense fallback={<>Cargando</>}>
-      <RoutesWithNotFound>
+      <Routes>
         <Route path="/" element={<Navigate to={PublicRoutes.LANDING} replace />} />
         <Route path={PublicRoutes.LOGIN} element={<Login />}/>
         <Route path={PublicRoutes.REGISTER} element={<RegisterForm />}/>
@@ -35,7 +34,7 @@ function App() {
             </ProtectedToken>
           } 
         />
-      </RoutesWithNotFound>
+      </Routes>
     </Suspense>
   );
 }
